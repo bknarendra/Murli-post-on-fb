@@ -28,7 +28,7 @@ public class MurliPost
 		Date date=new Date();
 		murli=String.valueOf(date.getDate())+"/"+String.valueOf(date.getMonth()+1)+"/"+String.valueOf(1990+date.getYear())+"\n\n"+murli;
 		System.out.println(murli);
-		DefaultFacebookClient facebookClient=new DefaultFacebookClient("AAAFmZCvEqZBiABACqR2zFyYj3s8LEUkkaGLs9LPWmgoa3gx09DzzLIIenPljWBiZBDiaWS9zGirNdg5JZBJhxB5ahGgcTFooZCnI95LS7CwZDZD");
+		DefaultFacebookClient facebookClient=new DefaultFacebookClient("your access token goes here");
 		JsonObject j=facebookClient.fetchObject("me/accounts",JsonObject.class);
 		JsonArray acc=j.getJsonArray("data");
 		for(int i=0;i<acc.length();i++) 
