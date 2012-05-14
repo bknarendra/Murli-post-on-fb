@@ -1,0 +1,1 @@
+This application simply fetches thought (murli) from a page in json. Extracts thought from it and posts it on fb page as page administrator using restfb
