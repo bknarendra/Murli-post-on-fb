@@ -8,7 +8,8 @@ public class MurliPost
 {
 	public static void main(String args[])throws Exception{
 		String temp1="",temp = "";
-		URL u=new URL("http://bkwsu.org/thoughtText?lang=en");
+		//URL u=new URL("http://bkwsu.org/thoughtText?lang=en");//for english
+		URL u=new URL("http://bkwsu.org/thoughtText?lang=hi");//for hindi
 		HttpURLConnection uc=(HttpURLConnection) u.openConnection();
 		uc.setDoOutput(true);
 		uc.setDoInput(true);
